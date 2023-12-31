@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  transition: all 0.5s ease-in;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://source.unsplash.com/1600x900/?nature");
+  /* height: 100%; */
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+}
+nav{
+    position: fixed;
+    top:0;
+    width:100%;
+    background-color:none ;
+    float: right;
+    height:70px;
+    font-family: 'Quicksand', sans-serif;
+}
+nav ul{
+   list-style: none;
+   padding:0;
+   margin:0;
+}
+nav a{
+    text-decoration: none;
+    font-size: 20px;  
+    color: white;
+    text-transform: uppercase;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+nav li{
+    display: inline-block;
+    margin-left: 40px;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    padding: 2rem;
+}
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+    
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+}
+a:hover {
+  text-decoration: underline;
+}
+.clock-container {
+    list-style: none;
+  text-align: center;
+  max-width: 100%;
+  padding-top: 10%;
+  padding-bottom: 37%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 50%; 
+  margin: auto; 
+}
+.time {
+  padding-top: 3%;
+  font-size: 7rem;
+}
+.date {
+  font-size: 3rem;
+  padding: 1rem;
+}
+#quote {
+  font-size: 1.8rem;
+}
+p#wish{
+    padding-bottom: 5%;
+}
+.search {
+	display: inline-block;
+	position: relative;
+	height: 35px;
+	width: 35px;
+	box-sizing: border-box;
+	margin: 0px 8px 7px 0px;
+	padding: 7px 9px 0px 9px;
+	border: 3px solid;
+	border-radius: 25px;
+	transition: all 200ms ease;
+	cursor: text;
+
+	&:after {
+		content: "";
+		position: absolute;
+		width: 3px;
+		height: 20px;
+		right: -5px;
+		top: 21px;
+		background:chartreuse;
+		border-radius: 3px;
+		transform: rotate(-45deg);
+		transition: all 200ms ease;
+	}
+
+	&.active,
+	&:hover {
+		width: 200px;
+		margin-right: 0px;
+
+		&:after {
+			height: 0px;
+		}
+	}
+
+	input {
+		width: 100%;
+		border: none;
+		box-sizing: border-box;
+		font-family: Helvetica;
+		font-size: 15px;
+		color: inherit;
+		background: transparent;
+		outline-width: 0px;
+	}
+}
