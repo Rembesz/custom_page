@@ -53,7 +53,7 @@ function setTime() {
   timeEl.innerHTML = `${hoursForClock}:${
     minutes < 10 ? `0${minutes}` : minutes
   } ${ampm}`;
-  dateEl.innerHTML = `${days[day]} ${months[month]} <span>${date}</span> ${year}`;
+  dateEl.innerHTML = `<span>${date} -</span> - ${days[day]} ${months[month]} - ${year}`;
 }
 
 setTime();
