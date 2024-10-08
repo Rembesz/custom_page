@@ -97,7 +97,7 @@ const image = "https://api.unsplash.com/photos/random?client_id=G7UEqPgI-ngqb33K
 function getBg(){
  fetch(image)
 	.then(function (data) {return data.json();
-	.then(function (data) {document.getElementById("latarb").innerHTML = data.urls.full})
+	.then(function (data) {document.getElementById("latarb").innerHTML = data.urls;})
     	.catch(function (err) {console.log(err);
     });
 }
