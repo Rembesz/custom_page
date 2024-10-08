@@ -92,7 +92,7 @@ input.addEventListener("keypress", function(event) {
     document.getElementById("myBtn").click();
   }
 });
-
+/*
 const image = "https://api.unsplash.com/photos/random?client_id=G7UEqPgI-ngqb33KHM_NJ-OKPL1bIEE3WpYyTnkhMHg&query=view";
 function getBg(){
  fetch(image)
