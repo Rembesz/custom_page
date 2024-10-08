@@ -106,5 +106,5 @@ function getBg(){
     .catch(function (err) {
       console.log(err);
     });
-    });
 }
+*/
