@@ -96,8 +96,15 @@ input.addEventListener("keypress", function(event) {
 const image = "https://api.unsplash.com/photos/random?client_id=G7UEqPgI-ngqb33KHM_NJ-OKPL1bIEE3WpYyTnkhMHg&query=view";
 function getBg(){
  fetch(image)
-	.then(function (data) {return data.json();
-	.then(function (data) {document.getElementById("latarb").innerHTML = data.urls;})
-    	.catch(function (err) {console.log(err);
+	fetch(url)
+    .then(function (data) {
+      return data.json();
+    })
+    .then(function (data) {
+      document.getElementById("latarb").innerHTML = data.slug;
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
     });
 }
